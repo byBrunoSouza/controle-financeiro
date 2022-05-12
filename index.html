@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
     <title>Controle financeiro</title>
   </head>
   <body>
@@ -33,10 +34,75 @@
       </div>
     </header>
 
-    <div class="container">
+    <main class="main">
       <section class="new-transaction">
         <h2>Nova trasação</h2>
+        <form class="form">
+          <div class="transaction type">
+            <label>Tipo de transação</label>
+            <select name="select">
+              <option value="Compra" selected>Compra</option>
+              <option value="Venda">Venda</option>
+            </select>
+          </div>
+          <div class="transaction commodity-name">
+            <label>Nome da mercadoria</label>
+            <input type="text" placeholder="input" />
+          </div>
+          <div class="transaction">
+            <label>Valor</label>
+            <input type="text" placeholder="R$ 0,00" />
+          </div>
+
+          <div class="button">
+            <button>Adicionar transação</button>
+          </div>
+        </form>
       </section>
-    </div>
+
+      <section class="Transaction-statement">
+        <h2>Extrato de transações</h2>
+        <table>
+          <thead>
+            <tr>
+              <th class="th-merchandise">Mercadoria</th>
+              <th class="value">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="commodity">
+                + Lorem ipsum dolor sit amet consectetur
+              </td>
+
+              <td class="commodity value">R$ 12.999,99</td>
+            </tr>
+
+            <tr>
+              <td class="commodity">- Quis nostrud exercitation</td>
+              <td class="commodity value">R$ 99,99</td>
+            </tr>
+
+            <tr>
+              <td class="commodity">+ Lorem ipsum</td>
+              <td class="commodity value">R$ 9,99</td>
+            </tr>
+
+            <td class="vazio"></td>
+            <td class="vazio"></td>
+
+            <tr>
+              <td class="total-extract commodity-total">Total</td>
+              <td class="total-extract commodity-value-total">R$ 12.909,99</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td class="value profit">[LUCRO]</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
   </body>
 </html>

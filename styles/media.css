@@ -1,0 +1,58 @@
+@media screen and (max-width: 858px) {
+  .main {
+    display: block;
+    width: 100%;
+  }
+
+  .new-transaction {
+    max-width: 100%;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .transaction {
+    width: 20%;
+    margin: 0 1rem;
+  }
+
+  .commodity-name {
+    width: 50%;
+  }
+
+  .button {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .new-transaction {
+    border: none;
+    border-bottom: 1px solid #444;
+  }
+
+  .form {
+    display: block;
+    width: 100%;
+  }
+
+  .transaction {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    display: block;
+  }
+}

@@ -16,10 +16,11 @@ body {
 .header {
   background-color: #e0e0e0;
   height: 8rem;
+  margin-bottom: 4.8rem;
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -60,4 +61,115 @@ body {
   color: #333;
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+/**************************/
+/* MAIN */
+/**************************/
+
+.main {
+  margin: 0 auto;
+  max-width: 110rem;
+  padding: 0 2rem;
+
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.new-transaction {
+  flex: 1;
+  padding: 2rem;
+  max-width: 40rem;
+  border: 0.1rem solid #979797;
+  border-radius: 0.4rem;
+}
+
+.transaction {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+label {
+  margin-bottom: 0.8rem;
+}
+
+input,
+select {
+  background-color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #979797;
+}
+
+.transaction.value {
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #333333;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+/***************************************/
+.Transaction-statement {
+  flex: 1;
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  font-size: 1.4rem;
+
+  border-spacing: 0;
+}
+
+.th-merchandise {
+  text-align: start;
+}
+
+.commodity {
+  border-bottom: 1px solid #979797;
+  padding: 1rem 0;
+}
+
+.value {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.commodity-total {
+  padding-left: 1rem;
+}
+
+.total-extract {
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.commodity-value-total {
+  text-align: end;
+  padding-right: 1rem;
+}
+
+.profit {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.vazio {
+  border-bottom: 1px solid #979797;
+  padding: 1px;
 }
