@@ -128,4 +128,8 @@
   hr {
     display: block;
   }
+
+  .transaction-statement {
+    padding: 2rem 0;
+  }
 }

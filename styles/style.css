@@ -140,7 +140,7 @@ hr {
 /* secion-Transaction-statement */
 /**************************/
 
-.Transaction-statement {
+.transaction-statement {
   flex: 1;
   padding: 2rem;
 }
