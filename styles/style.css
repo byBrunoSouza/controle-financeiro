@@ -13,9 +13,13 @@ body {
   color: #333;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .header {
   background-color: #e0e0e0;
-  height: 8rem;
+  height: 7.6rem;
   margin-bottom: 4.8rem;
 }
 
@@ -25,12 +29,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-self: center;
   padding: 2rem 2rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
 
@@ -40,7 +46,7 @@ body {
 }
 
 .logo h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -53,14 +59,13 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
-  font-size: 1.6rem;
 }
 
 .link {
   text-decoration: none;
   color: #333;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /**************************/
@@ -76,6 +81,10 @@ body {
   gap: 2rem;
   align-items: flex-start;
 }
+
+/**************************/
+/* secion-new-transaction */
+/**************************/
 
 .new-transaction {
   flex: 1;
@@ -123,7 +132,14 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/***************************************/
+hr {
+  display: none;
+}
+
+/**************************/
+/* secion-Transaction-statement */
+/**************************/
+
 .Transaction-statement {
   flex: 1;
   padding: 2rem;
@@ -147,11 +163,17 @@ table {
 
 .value {
   text-align: right;
+
   padding-right: 1rem;
 }
 
 .commodity-total {
   padding-left: 1rem;
+}
+
+.td-empty {
+  border-bottom: 1px solid #979797;
+  height: 2px;
 }
 
 .total-extract {
@@ -167,9 +189,4 @@ table {
 .profit {
   font-size: 1rem;
   padding-top: 0.5rem;
-}
-
-.vazio {
-  border-bottom: 1px solid #979797;
-  padding: 1px;
 }

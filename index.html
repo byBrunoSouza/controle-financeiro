@@ -9,6 +9,33 @@
     <title>Controle financeiro</title>
   </head>
   <body>
+    <!------------- Menu mobile ------------->
+    <header class="menu-mobile">
+      <div class="header-wrapper">
+        <img
+          src="https://edijunior88.github.io/NewTab_Academy_Projeto_Individual/img/logo.svg"
+          alt="logo"
+          alt="logo"
+        />
+        <h1 class="text-logo">Controle financeiro</h1>
+        <div class="box-menu">
+          <div>
+            <div class="hamburguer">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="menu">
+            <div>x</div>
+            <div class="hamburguer-links">Cadastro de transações</div>
+            <div class="hamburguer-links">Limpar dados</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!------------- Menu desktop ------------->
     <header class="header">
       <div class="container">
         <div class="logo">
@@ -16,10 +43,8 @@
             src="https://edijunior88.github.io/NewTab_Academy_Projeto_Individual/img/logo.svg"
             alt="logo"
           />
-
           <h1 class="title">Controle financeiro</h1>
         </div>
-
         <nav class="main-nav">
           <ul>
             <li>
@@ -35,8 +60,9 @@
     </header>
 
     <main class="main">
+      <!-------------secion-new-transaction------------->
       <section class="new-transaction">
-        <h2>Nova trasação</h2>
+        <h2 class="title-new-transaction">Nova trasação</h2>
         <form class="form">
           <div class="transaction type">
             <label>Tipo de transação</label>
@@ -59,6 +85,9 @@
           </div>
         </form>
       </section>
+      <hr />
+
+      <!-----------secion-Transaction-statement---------->
 
       <section class="Transaction-statement">
         <h2>Extrato de transações</h2>
@@ -88,8 +117,8 @@
               <td class="commodity value">R$ 9,99</td>
             </tr>
 
-            <td class="vazio"></td>
-            <td class="vazio"></td>
+            <td class="td-empty"></td>
+            <td class="td-empty"></td>
 
             <tr>
               <td class="total-extract commodity-total">Total</td>

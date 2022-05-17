@@ -1,18 +1,76 @@
 @media screen and (max-width: 858px) {
+  .header {
+    display: none;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    height: 6.2rem;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+
+    padding: 2rem;
+
+    display: none;
+  }
+
+  .hamburguer div {
+    width: 3.2rem;
+    height: 0.2rem;
+    background: #000;
+    margin: 0.8rem;
+  }
+
+  .hamburguer-links:hover {
+    color: #333;
+    background-color: #e0e0e0;
+  }
+
+  .box-menu:hover .menu {
+    display: flex;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .main {
     display: block;
     width: 100%;
   }
 
   .new-transaction {
+    margin-top: 3.2rem;
     max-width: 100%;
   }
 
   .form {
     width: 100%;
     display: flex;
+    column-gap: 2rem;
     justify-content: flex-end;
     flex-wrap: wrap;
+    padding-right: 2rem;
   }
 
   .transaction {
@@ -21,27 +79,37 @@
   }
 
   .commodity-name {
-    width: 50%;
+    width: 40%;
   }
 
   .button {
     padding-top: 2rem;
+    padding-right: 1rem;
     display: flex;
     justify-content: center;
 
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 682px) {
+  .menu {
+    width: 80vw;
+  }
+
   .new-transaction {
+    padding: 0;
     border: none;
-    border-bottom: 1px solid #444;
+  }
+
+  .title-new-transaction {
+    display: none;
   }
 
   .form {
     display: block;
     width: 100%;
+    padding: 0;
   }
 
   .transaction {
@@ -53,6 +121,11 @@
   .button {
     display: block;
     width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  hr {
     display: block;
   }
 }
